@@ -1,0 +1,22 @@
+{
+  "name": "ridtichai/eloquent-model-generator",
+  "description": "Laravel Eloquent Model Generator",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "ModelGenerator\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "ModelGenerator\\ModelGeneratorServiceProvider"
+      ]
+    }
+  },
+  "require-dev": {
+    "php": "^8.1",
+    "illuminate/support": "^10.0|^11.0"
+  }
+}
