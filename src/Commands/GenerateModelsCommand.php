@@ -49,7 +49,7 @@ class GenerateModelsCommand extends Command
             // Fillable columns
             $fillable = collect($columns)
                 ->pluck('Field')
-                ->reject(fn($col) => in_array($col, ['id', 'created_at', 'updated_at']))
+                ->reject(fn($col) => in_array($col, ['id']))  //, 'created_at', 'updated_at'
                 ->map(fn($col) => "'$col'")
                 ->implode(', ');
 
