@@ -1,4 +1,3 @@
-// stubs/model.stub
 <?php
 
 namespace App\Models;
@@ -10,4 +9,6 @@ class {{ class }} extends Model
     protected $table = '{{ table }}';
 
     protected $fillable = [{{ fillable }}];
+
+    {{ relations }}
 }
